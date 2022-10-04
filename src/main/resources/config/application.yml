@@ -1,6 +1,6 @@
 logging:
   pattern:
-    console: " %d{yyyy-MM-dd HH:mm:ss.SSS}   %p %C{1} [%t]  %.-5120msg%n"
+    console: " %d{yyyy-MM-dd HH:mm:ss.SSS} | %-5level %C{1} [%t]  %.-5000msg%n"
   level:
     com.prototype: DEBUG
     org.hibernate: ERROR
