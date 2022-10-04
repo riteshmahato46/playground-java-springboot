@@ -1,8 +1,13 @@
 logging:
   pattern:
-    console: " %d{yyyy-MM-dd HH:mm:ss.SSS} | %-5level %C{1} [%t]  %.-5000msg%n"
+    console: " %d{yyyy-MM-dd HH:mm:ss.SSS} | %-5level [%t] %C{1}  %.-5000msg%n"
   level:
     com.prototype: DEBUG
     org.hibernate: ERROR
     org.springframework.security: INFO
     org.springframework.web: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
