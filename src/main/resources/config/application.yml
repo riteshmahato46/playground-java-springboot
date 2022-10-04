@@ -6,3 +6,8 @@ logging:
     org.hibernate: ERROR
     org.springframework.security: INFO
     org.springframework.web: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
