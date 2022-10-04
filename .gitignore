@@ -1,0 +1,37 @@
+*.class
+Service\ Monitors\ UI.log
+
+# Eclipse files
+.classpath
+.project
+.settings/
+.DS_Store
+
+# DB
+*.db
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+*.log.*
+
+# Child modules
+bin/
+target/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/bin/
+.idea
+*.iml
+hateoas/hateoas.iml
+master.iml
+model/model.iml
+/.metadata/

@@ -1,0 +1,6 @@
+logging:
+  level:
+    com.prototype: DEBUG
+    org.hibernate: ERROR
+    org.springframework.security: INFO
+    org.springframework.web: INFO
