@@ -3,7 +3,12 @@ Production quality Spring boot web service boilerplate for startups.
 
 ## To be implemented
 
-### Logging
+### Rest Controllers
+1. Create a barebones Rest Controller with routing (done - [wiki](https://github.com/riteshmahato46/playground/wiki/REST-APIs))
+2. Create Error Handling and Exception handling controllers.
+3. Create telemetry controllers (done - [wiki](https://github.com/riteshmahato46/playground/wiki/REST-APIs))
+
+### Logging (done - [wiki](https://github.com/riteshmahato46/playground/wiki/Logging))
 1. Integrate slf4j with logback.
 2. Integrate a downstream log aggregator for `prod` profile and a `rollingFileAppender` for `dev` and `test` environments.
 
@@ -39,6 +44,14 @@ The above two will prevent noisy neighbour problems. Feel free to add more servi
 1. Add monitoring (time series) for critical health metric indicators (create api for these).
 2. Add failure detection (expressions on above time series that evaluate to a number or boolean)
 3. Add support for alerting in case of failures (integrate with PagerDuty/ email)
+
+### Profiling
+1. Add tools/scripts for JVM profiling (CPU, RAM, HEAP, Thread dumps, etc)
+2. Add code coverage tools. Integrate with build.
+
+### Performance testing
+1. Create scripts/tests for benchmarking performance.
+2. Create synthetic tests and steps to run the perf tests and generate perf metrics.
 
 ### Terraform for IaaS
 1. Add aws provider for provisioning clusters/resources through terraform(kubernetes).
