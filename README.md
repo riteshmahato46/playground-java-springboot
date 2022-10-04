@@ -3,6 +3,11 @@ Production quality Spring boot web service boilerplate for startups.
 
 ## To be implemented
 
+### Rest Controllers
+1. Create a barebones Rest Controller with routing (done - [wiki] (https://github.com/riteshmahato46/playground/wiki/REST-APIs))
+2. Create Error Handling and Exception handling controllers.
+3. Create telemetry controllers (done - [wiki] (https://github.com/riteshmahato46/playground/wiki/REST-APIs))
+
 ### Logging (done - [wiki](https://github.com/riteshmahato46/playground/wiki/Logging))
 1. Integrate slf4j with logback.
 2. Integrate a downstream log aggregator for `prod` profile and a `rollingFileAppender` for `dev` and `test` environments.
