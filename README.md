@@ -3,7 +3,7 @@ Production quality Spring boot web service boilerplate for startups.
 
 ## To be implemented
 
-### Logging
+### Logging (done - [wiki](https://github.com/riteshmahato46/playground/wiki/Logging))
 1. Integrate slf4j with logback.
 2. Integrate a downstream log aggregator for `prod` profile and a `rollingFileAppender` for `dev` and `test` environments.
 
