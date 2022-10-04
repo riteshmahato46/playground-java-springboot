@@ -2,6 +2,7 @@ package com.prototype.playground.controllers;
 
 import com.prototype.playground.PlaygroundConstants;
 import com.prototype.playground.exceptions.GenericExceptionResponse;
+import com.prototype.playground.exceptions.RequiredFieldInvalidException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -28,5 +29,15 @@ public class RestControllerAdvice {
         return new GenericExceptionResponse.Builder().addRequestUrl(request.getRequestURI())
                 .addStatus(HttpStatus.FORBIDDEN.value()).addHttpStatus(HttpStatus.FORBIDDEN.name())
                 .addMessage(PlaygroundConstants.ACCESS_DENIED_MESSAGE).addDebugMessage(exception.getMessage()).build();
+    }
+
+    @ResponseBody
+    @ExceptionHandler(RequiredFieldInvalidException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public GenericExceptionResponse requiredFieldInvalidErrorHandler(HttpServletRequest request,
+                                                                HttpServletResponse response, RequiredFieldInvalidException exception) {
+        return new GenericExceptionResponse.Builder().addRequestUrl(request.getRequestURI())
+                .addStatus(HttpStatus.BAD_REQUEST.value()).addHttpStatus(HttpStatus.BAD_REQUEST.name())
+                .addMessage(PlaygroundConstants.BAD_REQUEST_MESSAGE).addDebugMessage(exception.getMessage()).build();
     }
 }
