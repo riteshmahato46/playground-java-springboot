@@ -4,3 +4,4 @@ logging:
     org.hibernate: ERROR
     org.springframework.security: INFO
     org.springframework.web: INFO
+  config: target/classes/config/logback-spring.xml
