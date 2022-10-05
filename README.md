@@ -37,7 +37,7 @@ Production quality Spring boot web service boilerplate for startups.
 2. Implement Rate Limiting on Resources (CPU, RAM consumed).
 The above two will prevent noisy neighbour problems. Feel free to add more service protection methods.
 
-### Exception Handling
+### Exception Handling (done - [wiki](https://github.com/riteshmahato46/playground/wiki/Exception-Handling))
 1. Add `ControllerAdvice` and global exception handling.
 
 ### Monitoring and Alerting
