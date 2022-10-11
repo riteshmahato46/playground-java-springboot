@@ -23,6 +23,7 @@ Production quality Spring boot web service boilerplate for startups.
 1. Implement kafka connector, manager and worker for producing and consuming messages.
 2. Add code for managing kafka worker threads using multithreaded queues.
 3. Integrate with a managed kafka service from any public cloud for `prod` environment and a yml config to change the connector for local env.
+4. DLQ (Dead Letter Queues)
 
 ### Visualization
 1. Add support for Grafana or some other open source visualization tool for graphs.
