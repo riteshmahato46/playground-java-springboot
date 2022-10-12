@@ -3,9 +3,11 @@ package com.prototype.playground;
 import com.prototype.playground.model.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
+@EnableCaching
 public class PlaygroundApplication {
 
     public static void main(String[] args) {
