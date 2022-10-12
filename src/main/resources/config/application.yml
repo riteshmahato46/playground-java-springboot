@@ -6,6 +6,15 @@ logging:
     org.hibernate: ERROR
     org.springframework.security: INFO
     org.springframework.web: INFO
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
 management:
   endpoints:
     web:
