@@ -49,6 +49,7 @@ The above two will prevent noisy neighbour problems. Feel free to add more servi
 2. Create synthetic tests and steps to run the perf tests and generate perf metrics.
 
 
+-----------
 ## Infrastructural Add-ons (phase 2)
 
 ### Visualization
@@ -68,9 +69,6 @@ The above two will prevent noisy neighbour problems. Feel free to add more servi
 ### Disaster Recovery
 1. DB backups for point in time (RPO - Recovery point objective) - (how much data can I lose?)
 2. DB prod ready ASAP (RTO - Recovery time objective) - (how long can I be down?)
-
-### Terraform for IaaS
-1. Add aws provider for provisioning clusters/resources through terraform(kubernetes).
 
 ### Kubernetes support
 1. Add docker and kubernetes support.
